@@ -13,8 +13,8 @@ Restaurant.destroy_all
 puts "Creating restaurants..."
 
 20.times do |n|
-  Restaurant.create!(
-  name: Faker::Hipster.word.capitalize,
+  Movie.create!(
+  overview: Faker::Hipster.word.capitalize,
   address: Faker::Address.full_address,
   phone_number: Faker::PhoneNumber.phone_number,
   category: ["chinese", "italian", "japanese", "french", "belgian"].shuffle.first
